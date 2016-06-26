@@ -1,0 +1,12 @@
+.card {
+ padding: 16px 12px; 
+ font-size: $font-size-sm;
+ + .card {
+  margin-top: $gutter;
+ }
+}
+.card {
+ &.default {
+  background-color: $card-default-bg;
+ }
+}

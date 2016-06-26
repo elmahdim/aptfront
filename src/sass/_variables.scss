@@ -1,0 +1,41 @@
+// Base Colors
+$color-base   : #000000 !default;
+$color-main   : lighten($color-base, 40) !default; // #666666
+$color-grey   : lighten($color-base, 60) !default; // #999999
+$color-lgrey  : #eeeeee !default;
+// State Colors
+$color-primary: #3d8afe !default;
+$color-success: #2dbe60 !default;
+$color-default: lighten($color-base, 80) !default; // #cccccc
+$color-danger : #d72d1c !default;
+$color-warning: #f79220 !default;
+
+// Sizes
+$gutter: 20px !default;
+
+// Typography
+$font-size: 14px !default;
+$font-size-md: $font-size - 1 !default;
+$font-size-sm: $font-size-md - 1 !default;
+
+$font-size-h1 : $font-size + 6 !default;
+$font-size-h2 : $font-size + 2 !default;
+$font-size-h3 : $font-size !default;
+
+$font-weight-h2 : 400 !default;
+$font-weight-h3 : 500 !default;
+
+// Thumbnails
+$thumbnail: 80px !default;
+$thumbnail-border-color: $color-lgrey !default;
+
+// Buttons
+$btn-primary-bg : $color-primary !default;
+$btn-primary-border : $btn-primary-bg !default;
+$btn-primary-color : #fff !default;
+
+// Cards
+$card-default-bg : $color-lgrey !default;
+
+// Tables
+$table-border-color: $color-lgrey !default;

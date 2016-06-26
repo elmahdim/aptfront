@@ -1,0 +1,26 @@
+{
+  "name": "aptfront",
+  "version": "1.0.0",
+  "description": "aptdeco.com front plugin",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elmahdim/aptfront.git"
+  },
+  "author": "Mahmoud Elmahdi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elmahdim/aptfront/issues"
+  },
+  "homepage": "https://github.com/elmahdim/aptfront#readme",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-sass": "^2.3.2"
+  },
+  "dependencies": {}
+}

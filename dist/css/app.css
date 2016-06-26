@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #666666;
+  line-height: 18px;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.box {
+  padding: 40px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-mute {
+  color: #999999;
+}
+
+.pull-right {
+  float: right;
+}
+
+.text-success {
+  color: #2dbe60;
+}
+
+.thumbnail {
+  border: 1px solid #eeeeee;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  display: inline-block;
+}
+
+.thumbnail img {
+  max-width: 100%;
+}
+
+table {
+  width: 100%;
+  max-width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+table td {
+  padding: 16px;
+}
+
+table tr {
+  border: 1px solid #eeeeee;
+}
+
+.card {
+  padding: 16px 12px;
+  font-size: 12px;
+}
+
+.card + .card {
+  margin-top: 20px;
+}
+
+.card.default {
+  background-color: #eeeeee;
+}
