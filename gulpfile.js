@@ -2,6 +2,8 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var browserSync = require('browser-sync').create();
+var sprite = require('gulp-sprite-generator');
+
 
 var sassOptions = {
  input: ['src/sass/**/*.scss', 'src/sass/*.scss'],
@@ -23,6 +25,19 @@ gulp.task('sass', function() {
   .pipe(autoprefixer(autoprefixerOptions))
   .pipe(gulp.dest(sassOptions.output))
   .pipe(browserSync.stream())
+});
+
+gulp.task('sprites', function() {
+  var spriteOutput;
+ 
+  spriteOutput = gulp.src("src/sass/**/*.scss")
+    .pipe(sprite({
+            baseUrl:         "src/image/icons",
+            spriteSheetName: "sprite.png",
+            spriteSheetPath: "dist/images"
+    })
+    spriteOutput.css.pipe(gulp.dest("dist/css"))
+    spriteOutput.img.pipe(gulp.dest("dist/images"))
 });
 
 // Static server
